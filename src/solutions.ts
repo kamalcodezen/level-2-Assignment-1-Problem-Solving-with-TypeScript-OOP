@@ -39,3 +39,12 @@ function formatCoordinate(value: Coordinate): string {
 
 // console.log(formatCoordinate([23.81, 90.41, "Dhaka"]));
 // console.log(formatCoordinate([22.35, 91.78, "Chittagong"]));
+
+//*============ Problem 4 ============*//
+
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+  return arrays.flat();
+}
+
+// console.log(concatenateArrays(["a", "b"], ["c", "d"]));
+// console.log(concatenateArrays(concatenateArrays([1, 2], [3, 4], [5])));
