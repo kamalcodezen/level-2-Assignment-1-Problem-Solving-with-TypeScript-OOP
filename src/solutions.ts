@@ -12,15 +12,11 @@ type InputValue = string | number | boolean;
 
 function processInput(value: InputValue): string | number {
   if (typeof value === "string") {
-    const result = value.toLowerCase().trim();
-    return result;
+    return value.toLowerCase().trim();
   } else if (typeof value === "number") {
-    const result = value * 10;
-    return Number(result);
-  } else if (value === true) {
-    return "Active";
+    return Number(value * 10);
   } else {
-    return "Inactive";
+    return value ? "Active" : "Inactive";
   }
 }
 
