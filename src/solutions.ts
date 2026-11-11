@@ -71,3 +71,21 @@ const courses = [
 ];
 
 // console.log(getPopularCourses(courses, 80));
+
+//*============ Problem 6 ============*//
+
+function pluckValues<T, K extends keyof T>(users: T[], key: K): T[K][] {
+  const student = [];
+  for (let user of users) {
+    student.push(user[key]);
+  }
+  return student;
+}
+
+const users = [
+  { id: 1, name: "Rakib", role: "Admin" },
+  { id: 2, name: "Sadia", role: "Editor" },
+  { id: 3, name: "Tariq", role: "Subscriber" },
+];
+// console.log(pluckValues(users, "name"));
+// console.log(pluckValues(users, "id"));
