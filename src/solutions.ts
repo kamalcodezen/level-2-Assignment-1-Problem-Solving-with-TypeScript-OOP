@@ -82,6 +82,7 @@ function pluckValues<T, K extends keyof T>(users: T[], key: K): T[K][] {
   return student;
 }
 
+
 const users = [
   { id: 1, name: "Rakib", role: "Admin" },
   { id: 2, name: "Sadia", role: "Editor" },
@@ -89,3 +90,5 @@ const users = [
 ];
 // console.log(pluckValues(users, "name"));
 // console.log(pluckValues(users, "id"));
+
+//*============ Problem 7 ============*//
