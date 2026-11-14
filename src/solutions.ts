@@ -87,6 +87,7 @@ const users = [
   { id: 2, name: "Sadia", role: "Editor" },
   { id: 3, name: "Tariq", role: "Subscriber" },
 ];
+
 // console.log(pluckValues(users, "name"));
 // console.log(pluckValues(users, "id"));
 
@@ -124,7 +125,6 @@ const employee = new Employee("Kamal", 30000);
 
 // Create a Manager object
 const manager = new Manager("Alice", 50000, "Engineering");
-
 
 // console.log(employee.getDetails());
 // console.log(manager.getDetails());
