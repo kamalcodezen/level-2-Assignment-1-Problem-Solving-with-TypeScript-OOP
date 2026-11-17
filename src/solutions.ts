@@ -87,7 +87,6 @@ const users = [
   { id: 2, name: "Sadia", role: "Editor" },
   { id: 3, name: "Tariq", role: "Subscriber" },
 ];
-
 // console.log(pluckValues(users, "name"));
 // console.log(pluckValues(users, "id"));
 
